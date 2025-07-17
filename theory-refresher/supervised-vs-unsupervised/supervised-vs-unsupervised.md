@@ -38,5 +38,5 @@ You can find hands-on examples here:
 To run them:
 
 ```bash
-python theory-refresher/code-examples/supervised_example.py
-python theory-refresher/code-examples/unsupervised_example.py
+python theory-refresher/supervised-vs-unsupervised/code-examples/supervised_example.py
+python theory-refresher/supervised-vs-unsupervised/code-examples/unsupervised_example.py
