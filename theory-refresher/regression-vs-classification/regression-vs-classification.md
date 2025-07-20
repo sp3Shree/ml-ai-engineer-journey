@@ -53,7 +53,7 @@ See the runnable code examples:
 
 - [Regression Example: Predict Boston Housing Prices](./code-examples/regression_example.py)
 - [Classification Example: Predict Iris Species](./code-examples/classification_example.py)
-- [Notebook: Regression vs Classification](./code-examples/regression_vs_classification.ipynb)
+- [Notebook: Regression vs Classification](./regression_vs_classification.ipynb)
 
 To run the `.py` versions:
 
