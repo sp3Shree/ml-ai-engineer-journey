@@ -86,7 +86,7 @@ def extract_text_from_repo(repo_path: Path, allowed_exts):
     return all_chunks
 
 
-def save_chunks(chunks, output_path="data/chunks.jsonl"):
+def save_chunks(chunks, output_path="data/chunks/chunks.jsonl"):
     os.makedirs(Path(output_path).parent, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         for chunk in chunks:
@@ -112,7 +112,7 @@ def main():
     parser.add_argument("--token", help="GitHub token (or set GITHUB_TOKEN env var)")
     parser.add_argument("--force_clone", action="store_true", help="Delete and re-clone repo")
     parser.add_argument("--local_path", default="data/raw", help="Local path to clone repo")
-    parser.add_argument("--output", default="data/chunks.jsonl", help="Where to write output chunks")
+    parser.add_argument("--output", default="data/chunks/chunks.jsonl", help="Where to write output chunks")
 
     args = parser.parse_args()
     github_token = args.token or os.getenv("GITHUB_TOKEN")
